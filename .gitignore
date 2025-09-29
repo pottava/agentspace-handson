@@ -1,0 +1,49 @@
+# Python cache
+__pycache__/
+__pycache__*
+
+# Virtual environments
+.venv/
+.env
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage*
+htmlcov/
+.tox/
+*.cover
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# Development
+tmp
+.adk
+vendor
+*.log
+*~
+.DS_Store
+.serena
+
+# IDEs
+.vscode/
+.idea/
+
+# ASP
+.backup*
+.cloudbuild
+*/utils
+*/agent_engine_app.py
+*/requirements.txt
+deployment
+frontend
+notebooks
+tests
+deployment_metadata.json
+GEMINI.md
+Makefile
+/.requirements.txt
+/pyproject.toml
+/starter_pack_README.md
+/uv.lock
