@@ -1,0 +1,10 @@
+[project]
+name = "Calculator"
+version = "0.1.0"
+description = "四則演算を行うエージェントです"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-adk[a2a,eval]>=1.15.1",
+    "google-cloud-aiplatform[adk,agent-engines]>=1.117.0"
+]

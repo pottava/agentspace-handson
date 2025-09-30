@@ -1,0 +1,63 @@
+{
+  "eval_set_id": "calculator_agent_accuracy",
+  "name": "",
+  "description": "This is an eval set that is used for unit testing of the Agent",
+  "eval_cases": [
+    {
+      "eval_id": "eval_case_id",
+      "session_input": {
+        "app_name": "05",
+        "user_id": "user",
+        "state": {}
+      },
+      "conversation": [
+        {
+          "invocation_id": "b7982664-0ab6-47cc-ab13-326656afdf75",
+          "user_content": {
+            "parts": [
+              {
+                "text": "(340+5678*9)/2 の答えは？"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "(340 + 5678 * 9) / 2 の答えは、25721.0 です。"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "multiply",
+                "args": {
+                  "a": 5678,
+                  "b": 9
+                }
+              },
+              {
+                "name": "add",
+                "args": {
+                  "a": 340,
+                  "b": 51102
+                }
+              },
+              {
+                "name": "divide",
+                "args": {
+                  "a": 51442,
+                  "b": 2
+                }
+              }
+            ],
+            "tool_responses": [],
+            "intermediate_responses": []
+          }
+        }
+      ]
+    }
+  ]
+}

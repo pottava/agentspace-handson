@@ -1,0 +1,8 @@
+services:
+  agent:
+    image: calculator-agent
+    build: .
+    command: sleep infinity
+    volumes:
+      - ../:/workspace
+      - $HOME/.config/gcloud:/root/.config/gcloud
